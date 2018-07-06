@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "jsx": "preserve",
+    "lib": ["dom","es2015","es2017"],
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "allowJs": true,
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
