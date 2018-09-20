@@ -18,11 +18,12 @@ const DownloadLink = props => <Link to={'/downloads'} {...props} />
 
 const IndexPage = () => (
   <Layout>
-    <Grid container justify={'flex-start'} style={{paddingBottom: '30px'}}>
+    <Grid container justify={'flex-start'} style={{ paddingBottom: '30px' }}>
       <Grid item xs={8}>
         <Typography variant={'subheading'} paragraph>
-          Welcome to FlyBase for Developers.  This site is for developers, bioinformaticians, or other brave souls who
-          wish to dive deeply into FlyBase data beyond the web site.
+          Welcome to FlyBase for Developers. This site is for developers,
+          bioinformaticians, or other brave souls who wish to dive deeply into
+          FlyBase data beyond the web site.
         </Typography>
       </Grid>
     </Grid>
@@ -33,10 +34,17 @@ const IndexPage = () => (
             <Typography variant="display4" color="textPrimary" align={'center'}>
               <FontAwesomeIcon icon="coffee" />
             </Typography>
-            <Typography>How to obtain and work with the FlyBase Chado Database</Typography>
+            <Typography>
+              How to obtain and work with the FlyBase Chado Database
+            </Typography>
           </CardContent>
           <CardActions>
-            <Button fullWidth color="primary" variant={'outlined'} component={ChadoLink}>
+            <Button
+              fullWidth
+              color="primary"
+              variant={'outlined'}
+              component={ChadoLink}
+            >
               Chado
             </Button>
           </CardActions>
@@ -51,7 +59,12 @@ const IndexPage = () => (
             <Typography>FlyBase APIs</Typography>
           </CardContent>
           <CardActions>
-            <Button fullWidth color="primary" variant={'outlined'} component={ApiLink}>
+            <Button
+              fullWidth
+              color="primary"
+              variant={'outlined'}
+              component={ApiLink}
+            >
               API
             </Button>
           </CardActions>
@@ -66,7 +79,12 @@ const IndexPage = () => (
             <Typography>Flat files and other downloadable datasets.</Typography>
           </CardContent>
           <CardActions>
-            <Button fullWidth color="primary" variant={'outlined'} component={DownloadLink}>
+            <Button
+              fullWidth
+              color="primary"
+              variant={'outlined'}
+              component={DownloadLink}
+            >
               Downloads
             </Button>
           </CardActions>
