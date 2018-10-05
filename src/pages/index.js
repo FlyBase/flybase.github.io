@@ -1,97 +1,66 @@
 import React from 'react'
-import { Link } from 'gatsby'
-
-import Button from '@material-ui/core/Button'
-import Card from '@material-ui/core/Card'
-import CardActions from '@material-ui/core/CardActions'
-import CardContent from '@material-ui/core/CardContent'
-import Grid from '@material-ui/core/Grid'
-import Typography from '@material-ui/core/Typography'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { navigate } from 'gatsby'
+import { Card, Grid, Icon } from 'semantic-ui-react'
 
 import Layout from '../components/layout'
 
-const ChadoLink = props => <Link to={'/chado'} {...props} />
-const ApiLink = props => <Link to={'/api'} {...props} />
-const DownloadLink = props => <Link to={'/downloads'} {...props} />
-
 const IndexPage = () => (
   <Layout>
-    <Grid container justify={'flex-start'} style={{ paddingBottom: '30px' }}>
-      <Grid item xs={8}>
-        <Typography variant={'subheading'} paragraph>
-          Welcome to FlyBase for Developers. This site is for developers,
-          bioinformaticians, or other brave souls who wish to dive deeply into
-          FlyBase data beyond the web site.
-        </Typography>
-      </Grid>
-    </Grid>
-    <Grid container spacing={24} justify="space-evenly" alignItems="center">
-      <Grid item xs={12} sm={6} md={3}>
-        <Card>
-          <CardContent>
-            <Typography variant="display4" color="textPrimary" align={'center'}>
-              <FontAwesomeIcon icon="coffee" />
-            </Typography>
-            <Typography>
-              How to obtain and work with the FlyBase Chado Database
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button
-              fullWidth
-              color="primary"
-              variant={'outlined'}
-              component={ChadoLink}
-            >
-              Chado
-            </Button>
-          </CardActions>
-        </Card>
-      </Grid>
-      <Grid item xs={12} sm={6} md={3}>
-        <Card>
-          <CardContent>
-            <Typography variant="display4" color="textPrimary" align={'center'}>
-              <FontAwesomeIcon icon="cogs" />
-            </Typography>
-            <Typography>FlyBase APIs</Typography>
-          </CardContent>
-          <CardActions>
-            <Button
-              fullWidth
-              color="primary"
-              variant={'outlined'}
-              component={ApiLink}
-            >
-              API
-            </Button>
-          </CardActions>
-        </Card>
-      </Grid>
-      <Grid item xs={12} sm={6} md={3}>
-        <Card>
-          <CardContent>
-            <Typography variant="display4" color="textPrimary" align={'center'}>
-              <FontAwesomeIcon icon="download" />
-            </Typography>
-            <Typography>Flat files and other downloadable datasets.</Typography>
-          </CardContent>
-          <CardActions>
-            <Button
-              fullWidth
-              color="primary"
-              variant={'outlined'}
-              component={DownloadLink}
-            >
-              Downloads
-            </Button>
-          </CardActions>
-        </Card>
-      </Grid>
+    <Grid padded>
+      <Grid.Row>
+        <Grid.Column width={16}>
+          <Card.Group centered>
+            <Card raised link onClick={() => navigate('/chado/')}>
+              <Icon className={'center'} area-label={'Chado'} name={'coffee'} size={'huge'} />
+              <Card.Content>
+                <Card.Header>
+                  Chado
+                </Card.Header>
+                <Card.Description>
+                  Learn about the FlyBase Chado database.  How to download it,
+                  access our public server, query it, etc...
+                </Card.Description>
+              </Card.Content>
+            </Card>
+            <Card raised link onClick={() => navigate('/downloads/')}>
+              <Icon className={'center'} area-label={'Downloads'} name={'download'} size={'huge'} />
+              <Card.Content>
+                <Card.Header>
+                  Downloads
+                </Card.Header>
+                <Card.Description>
+                  Information on various downloadable files available from FlyBase.
+                </Card.Description>
+              </Card.Content>
+            </Card>
+            <Card raised link onClick={() => navigate('/api/')}>
+              <Icon className={'center'} area-label={'API'} name={'cogs'} size={'huge'} />
+              <Card.Content>
+                <Card.Header>
+                  API
+                </Card.Header>
+                <Card.Description>
+                  Documentation and examples on using the FlyBase API.
+                </Card.Description>
+              </Card.Content>
+            </Card>
+            <Card raised link href={'https://www.github.com/FlyBase'}>
+              <Icon className={'center'} area-label={'GitHub'} name={'code'} size={'huge'} />
+              <Card.Content>
+                <Card.Header>
+                  FlyBase code
+                </Card.Header>
+                <Card.Description>
+                   Visit the FlyBase GitHub organization for our publicly available code.
+                </Card.Description>
+              </Card.Content>
+            </Card>
+          </Card.Group>
+        </Grid.Column>
+      </Grid.Row>
     </Grid>
   </Layout>
+
 )
 
 export default IndexPage

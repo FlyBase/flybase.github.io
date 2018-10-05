@@ -4,6 +4,14 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-transformer-json',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'docs',
+        path: `${__dirname}/src/content/`
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -13,7 +21,7 @@ module.exports = {
         background_color: '#036',
         theme_color: '#036',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        //icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-offline',
@@ -21,7 +29,7 @@ module.exports = {
       resolve: `gatsby-mdx`,
       options: {
         defaultLayouts: {
-          default: require.resolve('./src/components/layout.js'),
+          default: require.resolve('./src/components/docs.js'),
         },
       },
     },
