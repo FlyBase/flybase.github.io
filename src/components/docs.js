@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import { MDXProvider } from '@mdx-js/tag'
+import { Grid } from 'semantic-ui-react'
 
 import Layout from './layout';
 
@@ -12,10 +13,16 @@ export default class MDXRuntimeTest extends Component {
     return (
       <MDXProvider components={{}}>
         <Layout>
-          <div>{children}</div>
-          <MDXRenderer {...props} scope={__mdxScope}>
-            {data.mdx.code.body}
-          </MDXRenderer>
+          <Grid padded>
+            <Grid.Row>
+              <Grid.Column width={16}>
+                <div>{children}</div>
+                <MDXRenderer {...props} scope={__mdxScope}>
+                  {data.mdx.code.body}
+                </MDXRenderer>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
         </Layout>
       </MDXProvider>
     )

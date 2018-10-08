@@ -6,9 +6,9 @@ import Layout from '../components/layout'
 
 const IndexPage = () => (
   <Layout>
-    <Grid padded>
+    <Grid centered>
       <Grid.Row>
-        <Grid.Column width={16}>
+        <Grid.Column width={10}>
           <Card.Group centered>
             <Card raised link onClick={() => navigate('/chado/')}>
               <Icon className={'center'} area-label={'Chado'} name={'coffee'} size={'huge'} />
