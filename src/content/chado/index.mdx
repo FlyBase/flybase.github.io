@@ -5,9 +5,19 @@ tags:
   - chado
 ---
 
-## FlyBase Chado
+import { Breadcrumb } from 'semantic-ui-react'
+import { navigate } from 'gatsby'
 
-### Table of Contents
+<div className="breadcrumb-container">
+  <Breadcrumb>
+    <Breadcrumb.Section link onClick={() => navigate('/') }>Home</Breadcrumb.Section>
+    <Breadcrumb.Divider />
+    <Breadcrumb.Section>Chado</Breadcrumb.Section>
+  </Breadcrumb>
+</div>
+
+
+## FlyBase Chado
 
 ### Background
 

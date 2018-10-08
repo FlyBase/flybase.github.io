@@ -624,7 +624,7 @@ pre tt:after {
 }
 
 main {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .topbar {
@@ -642,4 +642,8 @@ i.icon.center {
 }
 a i.icon.center {
   color: black;
+}
+
+.breadcrumb-container {
+  margin-bottom: 2rem;
 }

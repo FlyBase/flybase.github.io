@@ -31,6 +31,7 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve('./src/components/docs.js'),
         },
+        extensions:[".mdx", ".md"],
         mdPlugins: [require("remark-toc")],
         gatsbyRemarkPlugins: [
           { resolve: "gatsby-remark-autolink-headers" },
