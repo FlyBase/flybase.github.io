@@ -1,13 +1,13 @@
-import React from 'react'
-import { Divider, Grid } from 'semantic-ui-react'
+import React from "react"
+import { Divider, Grid } from "semantic-ui-react"
 
-import FlyBaseIcons from './FlyBaseIcons'
+import FlyBaseIcons from "./FlyBaseIcons"
 
 const Footer = () => (
-  <Grid as={'footer'} padded>
+  <Grid as={"footer"} padded>
     <Grid.Row>
       <Grid.Column width={16}>
-        <Divider/>
+        <Divider />
         <FlyBaseIcons />
       </Grid.Column>
     </Grid.Row>

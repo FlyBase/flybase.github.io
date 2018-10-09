@@ -5,9 +5,9 @@
  */
 
 // gatsby-node.js
-const path = require("path");
-const startCase = require("lodash.startcase");
-const componentWithMDXScope = require("gatsby-mdx/component-with-mdx-scope");
+const path = require("path")
+const startCase = require("lodash.startcase")
+const componentWithMDXScope = require("gatsby-mdx/component-with-mdx-scope")
 
 // You can delete this file if you're not using it
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
@@ -25,34 +25,33 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   }
 }
 
-
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions;
+  const { createPage } = actions
   return new Promise((resolve, reject) => {
     resolve(
       graphql(
         `
-        {
-          allMdx {
-            edges {
-              node {
-                fields {
-                  id
-                  slug
-                }
-                tableOfContents
-                code {
-                  scope
+          {
+            allMdx {
+              edges {
+                node {
+                  fields {
+                    id
+                    slug
+                  }
+                  tableOfContents
+                  code {
+                    scope
+                  }
                 }
               }
             }
           }
-        }
         `
       ).then(result => {
         if (result.errors) {
-          console.log(result.errors);
-          reject(result.errors);
+          console.log(result.errors)
+          reject(result.errors)
         }
         // Create blog posts pages.
         result.data.allMdx.edges.forEach(({ node }) => {
@@ -63,48 +62,48 @@ exports.createPages = ({ graphql, actions }) => {
               node.code.scope
             ),
             context: {
-              id: node.fields.id
-            }
-          });
-        });
+              id: node.fields.id,
+            },
+          })
+        })
       })
-    );
-  });
-};
+    )
+  })
+}
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
       modules: [path.resolve(__dirname, "src"), "node_modules"],
-      alias: { $components: path.resolve(__dirname, "src/components") }
-    }
-  });
-};
+      alias: { $components: path.resolve(__dirname, "src/components") },
+    },
+  })
+}
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions;
+  const { createNodeField } = actions
 
   if (node.internal.type === `Mdx`) {
-    const parent = getNode(node.parent);
-    let value = parent.relativePath.replace(parent.ext, "");
-    value = value.replace(/\/index$/i, "/");
+    const parent = getNode(node.parent)
+    let value = parent.relativePath.replace(parent.ext, "")
+    value = value.replace(/\/index$/i, "/")
 
     createNodeField({
       name: "slug",
       node,
-      value: `/${value}`
-    });
+      value: `/${value}`,
+    })
 
     createNodeField({
       name: "id",
       node,
-      value: node.id
-    });
+      value: node.id,
+    })
 
     createNodeField({
       name: "title",
       node,
-      value: node.frontmatter.title || startCase(parent.name)
-    });
+      value: node.frontmatter.title || startCase(parent.name),
+    })
   }
-};
+}

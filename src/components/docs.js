@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import { graphql } from 'gatsby'
+import React, { Component } from "react"
+import { graphql } from "gatsby"
 
-import MDXRenderer from 'gatsby-mdx/mdx-renderer'
-import { MDXProvider } from '@mdx-js/tag'
-import { Grid } from 'semantic-ui-react'
+import MDXRenderer from "gatsby-mdx/mdx-renderer"
+import { MDXProvider } from "@mdx-js/tag"
+import { Grid } from "semantic-ui-react"
 
-import Layout from './layout';
+import Layout from "./layout"
 
 export default class MDXRuntimeTest extends Component {
   render() {
