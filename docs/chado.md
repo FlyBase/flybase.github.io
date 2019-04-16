@@ -1,21 +1,7 @@
 ---
-title: "FlyBase Chado"
-date: "2017-08-10"
-tags:
-  - chado
+id: chado-general
+title: General Chado Information
 ---
-
-import { Breadcrumb } from 'semantic-ui-react'
-import { navigate } from 'gatsby'
-
-<div className="breadcrumb-container">
-  <Breadcrumb>
-    <Breadcrumb.Section link onClick={() => navigate('/') }>Home</Breadcrumb.Section>
-    <Breadcrumb.Divider />
-    <Breadcrumb.Section>Chado</Breadcrumb.Section>
-  </Breadcrumb>
-</div>
-
 
 ## FlyBase Chado
 
@@ -72,5 +58,3 @@ Type "help" for help.
 
 flybase=> 
 ```
-  
-
