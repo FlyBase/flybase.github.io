@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://flybase.github.io/FlyBase/help</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://flybase.github.io/FlyBase/en/help" /> </url>
+<url> <loc>https://flybase.github.io/FlyBase/index</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://flybase.github.io/FlyBase/en/index" /> </url>
+<url> <loc>https://flybase.github.io/FlyBase/users</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://flybase.github.io/FlyBase/en/users" /> </url>
+<url> <loc>https://flybase.github.io/FlyBase/docs/chado-general</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://flybase.github.io/FlyBase/docs/chado-general" /> </url>
+<url> <loc>https://flybase.github.io/FlyBase/docs/downloads</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://flybase.github.io/FlyBase/docs/downloads" /> </url>
+</urlset>
