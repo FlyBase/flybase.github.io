@@ -1,40 +1,193 @@
+This website was created with [Docusaurus](https://docusaurus.io/).
 
-## FlyBase GitHub Orgnization Website
+# What's In This Document
 
-This repository contains the code that generates the FlyBase
-GitHub organization website hosted at https://flybase.github.io/
+* [Get Started in 5 Minutes](#get-started-in-5-minutes)
+* [Directory Structure](#directory-structure)
+* [Editing Content](#editing-content)
+* [Adding Content](#adding-content)
+* [Full Documentation](#full-documentation)
 
-### Background
+# Get Started in 5 Minutes
 
-This site uses [Gatsbyjs](https://www.gatsbyjs.org/) to produce the documentation.
+1. Make sure all the dependencies for the website are installed:
 
-### Content
+```sh
+# Install dependencies
+$ yarn
+```
+2. Run your dev server:
 
-Content for this site is generated via two main methods.  Either via a React based
-page under `src/pages/` or MD/MDX content under `src/content/`.
+```sh
+# Start the site
+$ yarn start
+```
 
-MD stands for Markdown and MDX are Markdown files that can use JSX components.
+## Directory Structure
 
-#### Layouts, Header, Footer, CSS, etc.
+Your project file structure should look something like this
 
-The `src/components` directory contains most of the React and CSS code that drives the
-main page layout.
+```
+my-docusaurus/
+  docs/
+    doc-1.md
+    doc-2.md
+    doc-3.md
+  website/
+    blog/
+      2016-3-11-oldest-post.md
+      2017-10-24-newest-post.md
+    core/
+    node_modules/
+    pages/
+    static/
+      css/
+      img/
+    package.json
+    sidebar.json
+    siteConfig.js
+```
 
-#### Adding pages
+# Editing Content
 
-To add content to the site, create a new React component under `src/pages` or
-a new MD/MDX file under `src/content`.
+## Editing an existing docs page
 
-Any sub-directories created will be reflected in the URL path.  In other words, 
-creating a file called `src/content/chado/queries/index.md` will populate a page
-at `https://flybase.github.io/chado/queries/`.
+Edit docs by navigating to `docs/` and editing the corresponding document:
 
-### Commands
+`docs/doc-to-be-edited.md`
 
-List of yarn/npm commands:
- * npm run develop - Starts the developer mode via a local webserver.
- * npm run build   - Builds/compiles the static site.
- * npm run format  - Formats all JS/JSX code under `src` using prettier
- * npm run deploy  - Builds and publishes the static site to the GitHub website.
- 
+```markdown
+---
+id: page-needs-edit
+title: This Doc Needs To Be Edited
+---
 
+Edit me...
+```
+
+For more information about docs, click [here](https://docusaurus.io/docs/en/navigation)
+
+## Editing an existing blog post
+
+Edit blog posts by navigating to `website/blog` and editing the corresponding post:
+
+`website/blog/post-to-be-edited.md`
+```markdown
+---
+id: post-needs-edit
+title: This Blog Post Needs To Be Edited
+---
+
+Edit me...
+```
+
+For more information about blog posts, click [here](https://docusaurus.io/docs/en/adding-blog)
+
+# Adding Content
+
+## Adding a new docs page to an existing sidebar
+
+1. Create the doc as a new markdown file in `/docs`, example `docs/newly-created-doc.md`:
+
+```md
+---
+id: newly-created-doc
+title: This Doc Needs To Be Edited
+---
+
+My new content here..
+```
+
+1. Refer to that doc's ID in an existing sidebar in `website/sidebar.json`:
+
+```javascript
+// Add newly-created-doc to the Getting Started category of docs
+{
+  "docs": {
+    "Getting Started": [
+      "quick-start",
+      "newly-created-doc" // new doc here
+    ],
+    ...
+  },
+  ...
+}
+```
+
+For more information about adding new docs, click [here](https://docusaurus.io/docs/en/navigation)
+
+## Adding a new blog post
+
+1. Make sure there is a header link to your blog in `website/siteConfig.js`:
+
+`website/siteConfig.js`
+```javascript
+headerLinks: [
+    ...
+    { blog: true, label: 'Blog' },
+    ...
+]
+```
+
+2. Create the blog post with the format `YYYY-MM-DD-My-Blog-Post-Title.md` in `website/blog`:
+
+`website/blog/2018-05-21-New-Blog-Post.md`
+
+```markdown
+---
+author: Frank Li
+authorURL: https://twitter.com/foobarbaz
+authorFBID: 503283835
+title: New Blog Post
+---
+
+Lorem Ipsum...
+```
+
+For more information about blog posts, click [here](https://docusaurus.io/docs/en/adding-blog)
+
+## Adding items to your site's top navigation bar
+
+1. Add links to docs, custom pages or external links by editing the headerLinks field of `website/siteConfig.js`:
+
+`website/siteConfig.js`
+```javascript
+{
+  headerLinks: [
+    ...
+    /* you can add docs */
+    { doc: 'my-examples', label: 'Examples' },
+    /* you can add custom pages */
+    { page: 'help', label: 'Help' },
+    /* you can add external links */
+    { href: 'https://github.com/facebook/Docusaurus', label: 'GitHub' },
+    ...
+  ],
+  ...
+}
+```
+
+For more information about the navigation bar, click [here](https://docusaurus.io/docs/en/navigation)
+
+## Adding custom pages
+
+1. Docusaurus uses React components to build pages. The components are saved as .js files in `website/pages/en`:
+1. If you want your page to show up in your navigation header, you will need to update `website/siteConfig.js` to add to the `headerLinks` element:
+
+`website/siteConfig.js`
+```javascript
+{
+  headerLinks: [
+    ...
+    { page: 'my-new-custom-page', label: 'My New Custom Page' },
+    ...
+  ],
+  ...
+}
+```
+
+For more information about custom pages, click [here](https://docusaurus.io/docs/en/custom-pages).
+
+# Full Documentation
+
+Full documentation can be found on the [website](https://docusaurus.io/).
