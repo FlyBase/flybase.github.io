@@ -24,14 +24,14 @@ const siteConfig = {
   title: 'FlyBase for Developers', // Title for your website.
   tagline: 'Developer docs for FlyBase API, Chado, bulk files, etc.',
   url: 'https://flybase.github.io', // Your website URL
-  baseUrl: '/FlyBase/', // Base URL for your project */
+  baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'flybase.github.io',
-  organizationName: 'FlyBase',
+  projectName: '',
+  organizationName: 'flybase',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
