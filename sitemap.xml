@@ -3,6 +3,10 @@
 <url> <loc>https://flybase.github.io/help</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://flybase.github.io/en/help" /> </url>
 <url> <loc>https://flybase.github.io/index</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://flybase.github.io/en/index" /> </url>
 <url> <loc>https://flybase.github.io/users</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://flybase.github.io/en/users" /> </url>
-<url> <loc>https://flybase.github.io/docs/chado-general</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://flybase.github.io/docs/chado-general" /> </url>
+<url> <loc>https://flybase.github.io/docs/api/</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://flybase.github.io/docs/api/" /> </url>
+<url> <loc>https://flybase.github.io/docs/chado/functions</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://flybase.github.io/docs/chado/functions" /> </url>
+<url> <loc>https://flybase.github.io/docs/chado/</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://flybase.github.io/docs/chado/" /> </url>
 <url> <loc>https://flybase.github.io/docs/downloads</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://flybase.github.io/docs/downloads" /> </url>
+<url> <loc>https://flybase.github.io/docs/howtos-list</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://flybase.github.io/docs/howtos-list" /> </url>
+<url> <loc>https://flybase.github.io/docs/howtos/chado/symbol-lookup</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://flybase.github.io/docs/howtos/chado/symbol-lookup" /> </url>
 </urlset>

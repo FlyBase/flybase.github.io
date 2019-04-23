@@ -1,0 +1,174 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Symbol Lookup with Chado · FlyBase for Developers</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;h2&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;introduction&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#introduction&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Symbol Lookup with Chado · FlyBase for Developers"/><meta property="og:type" content="website"/><meta property="og:url" content="https://flybase.github.io/"/><meta property="og:description" content="&lt;h2&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;introduction&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#introduction&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
+"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css"/><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/><link rel="stylesheet" href="/css/code-block-buttons.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/js/code-block-buttons.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/fly_logo.png" alt="FlyBase for Developers"/><h2 class="headerTitleWithLogo">FlyBase for Developers</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/howtos-list" target="_self">HowTo</a></li><li class="siteNavGroupActive"><a href="/docs/api/" target="_self">API</a></li><li class="siteNavGroupActive"><a href="/docs/chado/" target="_self">Chado</a></li><li class="siteNavGroupActive"><a href="/docs/downloads" target="_self">Downloads</a></li><li class=""><a href="http://github.com/flybase" target="_self">GitHub</a></li><li class=""><a href="http://flybase.org/contact/email" target="_self">Help</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>HowTos</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">HowTos</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/howtos-list">Full List</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/howtos/chado/symbol-lookup">Symbol Lookup</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/api/">Overview</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Chado</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/chado/">General Information</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Functions</h4><ul><li class="navListItem"><a class="navItem" href="/docs/chado/functions">FlyBase Specific</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Downloads</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/downloads">Overview</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Symbol Lookup with Chado</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="introduction"></a><a href="#introduction" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Introduction</h2>
+<p>In this HowTo, we are going cover how you can use Chado to get the current
+symbol for a FlyBase object.  A FlyBase object can be a gene, transcript, poplypeptide, insertion,
+etc.</p>
+<p>If all you want is the quickest method to get the current symbol,
+checkout the <a href="/docs/chado/functions#current_symbol">flybase.current_symbol</a> function.</p>
+<h2><a class="anchor" aria-hidden="true" id="requirements"></a><a href="#requirements" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Requirements</h2>
+<ul>
+<li>A client capable of connecting to our <a href="/docs/chado/#public-database">public PostgreSQL Chado</a> database.</li>
+<li>Basic understanding of SQL.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="schema-structure"></a><a href="#schema-structure" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Schema Structure</h2>
+<p>The following chado tables are used in this HowTo:</p>
+<ul>
+<li><a href="http://gmod.org/wiki/Chado_Tables#Table:_synonym">synonym</a></li>
+<li><a href="http://gmod.org/wiki/Chado_Tables#Table:_cvterm">cvterm</a></li>
+<li><a href="http://gmod.org/wiki/Chado_Tables#Table:_feature_synonym">feature_synonym</a></li>
+<li><a href="http://gmod.org/wiki/Chado_Tables#Table:_feature">feature</a></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="synonym-table"></a><a href="#synonym-table" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Synonym Table</h2>
+<p>In Chado, symbols are stored in the <code>synonym</code> table along with other types of names such as
+full names.  In order to distinguish different types of entries in the <code>synonym</code> table from
+each other, we associate each entry with a type in the <code>cvterm</code> table via the <code>synonym.type_id</code> field.
+Every symbol entry in the <code>synonym</code> table gets assigned a <code>type_id</code> that corresponds to the <code>symbol</code>
+<code>cvterm.name</code> entry.</p>
+<p>A query to fetch the first 10 symbols from this table looks like this:</p>
+<pre><code class="hljs css language-sql"><span class="hljs-keyword">select</span> s.name, s.synonym_sgml
+  <span class="hljs-keyword">from</span> <span class="hljs-keyword">synonym</span> s <span class="hljs-keyword">join</span> cvterm cvt <span class="hljs-keyword">on</span> s.type_id=cvt.cvterm_id
+  <span class="hljs-keyword">where</span> cvt.name=<span class="hljs-string">'symbol'</span>
+<span class="hljs-keyword">limit</span> <span class="hljs-number">10</span>
+;
+</code></pre>
+<p><strong>Example output:</strong></p>
+<pre><code class="hljs css language-bash">       name       |      synonym_sgml       
+------------------+-------------------------
+ Dok-RA           | Dok-RA
+ TRAM-RB          | TRAM-RB
+ ...
+ CG33070[EY06108] | CG33070&lt;up&gt;EY06108&lt;/up&gt;
+ betaTub60D[sk]   | βTub60D&lt;up&gt;sk&lt;/up&gt;
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="name-vs-synonym_sgml"></a><a href="#name-vs-synonym_sgml" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>name</code> vs <code>synonym_sgml</code></h3>
+<p>As you can see the <code>synonym</code> table has two fields for storing the symbol, <code>name</code>
+<code>synonym_sgml</code>.  At FlyBase, we store an ASCII form of the symbol in <code>synonym.name</code> and
+a UTF-8 version of the symbol in <code>synonym.synonym_sgml</code>.  The main differences you will notice
+between <code>name</code> and <code>synonym_sgml</code> are transliterated greek characters (beta) vs UTF-8 greek characters
+(β) and square brackets <code>[]</code> or <code>[[]]</code> vs curator superscript/subscript notation <code>&lt;up&gt;&lt;/up&gt;</code>
+or <code>&lt;down&gt;&lt;/down&gt;</code> respectively.</p>
+<h2><a class="anchor" aria-hidden="true" id="gene-symbols"></a><a href="#gene-symbols" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Gene Symbols</h2>
+<p>To get symbols for genes we have to make a connection between the table being used to store
+genes and the <code>synonym</code> table.  For that we start with the <code>feature</code> table, which is the central
+hub table for genes in FlyBase.  Then in order to get to the <code>synonym</code> table we have to utilize
+a linker table called <code>feature_synonym</code>.  This linker table allows us to attach more than one
+symbol and attribution to the association of the gene and symbol.</p>
+<p>Putting this together with the previous query the table path now looks something like this:</p>
+<p><code>feature -&gt; feature_synonym -&gt; synonym -&gt; cvterm</code></p>
+<h3><a class="anchor" aria-hidden="true" id="gene-symbol-sql"></a><a href="#gene-symbol-sql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Gene Symbol SQL</h3>
+<p>Putting the above into SQL form, you get the following query for the gene FBgn0004907.</p>
+<pre><code class="hljs css language-sql"><span class="hljs-keyword">select</span> f.uniquename, s.synonym_sgml, fs.is_current
+  <span class="hljs-keyword">from</span> feature f <span class="hljs-keyword">join</span> feature_synonym fs <span class="hljs-keyword">on</span> (f.feature_id=fs.feature_id)
+                 <span class="hljs-keyword">join</span> <span class="hljs-keyword">synonym</span> s <span class="hljs-keyword">on</span> (fs.synonym_id=s.synonym_id)
+                 <span class="hljs-keyword">join</span> cvterm cvt <span class="hljs-keyword">on</span> (s.type_id=cvt.cvterm_id)
+  <span class="hljs-keyword">where</span> f.uniquename=<span class="hljs-string">'FBgn0004907'</span>
+    <span class="hljs-keyword">and</span> cvt.name=<span class="hljs-string">'symbol'</span>
+;
+</code></pre>
+<pre><code class="hljs css language-bash">...
+ FBgn0004907 | 14-3-3zeta   | f
+ FBgn0004907 | 14-3-3zeta   | f
+ FBgn0004907 | 1433Z        | f
+ FBgn0004907 | Leo          | f
+(182 rows)
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="182-rows-what-is-going-on"></a><a href="#182-rows-what-is-going-on" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>182 Rows -  What is going on?!</h4>
+<p>There are a couple of issues here.  First, take a look at the results for the <code>feature_synonym.is_current</code>
+column, we have a mix of <code>true</code> and <code>false</code> in there.  This field is used to distinguish symbols that
+are current (gene symbol) and those that are no longer the current symbol (gene symbol synonym).  In Drosophila
+nomenclature, a gene can have only one valid symbol, all others are considered symbol synonyms.  Symbols
+that have <code>is_current=true</code> are the current symbol and <code>is_current=false</code> are symbol synonyms.</p>
+<h4><a class="anchor" aria-hidden="true" id="ok-i-ve-filtered-on-is_current-true-but-i-m-still-seeing-duplicates"></a><a href="#ok-i-ve-filtered-on-is_current-true-but-i-m-still-seeing-duplicates" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>OK, I've filtered on <code>is_current=true</code> but I'm still seeing duplicates</h4>
+<p>The second issue here is that each use of the current symbol is being attributed to a specific publication
+via <code>feature_synonym.pub_id</code> which results in repetitive results for each attribution.  Filtering for
+<code>is_current</code> and <code>pub_id</code> we get the following final form.</p>
+<pre><code class="hljs css language-sql"><span class="hljs-keyword">select</span> <span class="hljs-keyword">distinct</span> f.uniquename, s.synonym_sgml
+  <span class="hljs-keyword">from</span> feature f <span class="hljs-keyword">join</span> feature_synonym fs <span class="hljs-keyword">on</span> (f.feature_id=fs.feature_id)
+                 <span class="hljs-keyword">join</span> <span class="hljs-keyword">synonym</span> s <span class="hljs-keyword">on</span> (fs.synonym_id=s.synonym_id)
+                 <span class="hljs-keyword">join</span> cvterm cvt <span class="hljs-keyword">on</span> (s.type_id=cvt.cvterm_id)
+  <span class="hljs-keyword">where</span> f.uniquename=<span class="hljs-string">'FBgn0004907'</span>
+    <span class="hljs-keyword">and</span> cvt.name=<span class="hljs-string">'symbol'</span>
+    <span class="hljs-keyword">and</span> fs.is_current=<span class="hljs-literal">true</span>
+;
+</code></pre>
+<pre><code class="hljs css language-sql"> uniquename  | synonym_sgml 
+<span class="hljs-comment">-------------+--------------</span>
+ FBgn0004907 | 14-3-3ζ
+(1 row)
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="other-symbols"></a><a href="#other-symbols" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Other Symbols</h2>
+<p>The above query will work for the majority of objects in FlyBase because they use the
+<code>feature</code> table as a hub.  However, there are some exceptions for FlyBase objects that
+use other tables as their hub table.  Other hub tables include <code>grp</code> (Gene Groups), <code>strain</code> (Strains),
+<code>cell_line</code> (Cell Lines), <code>humanhealth</code> (Human Disease), and <code>library</code> (Library Metadata).</p>
+<p>For these other tables you will need to change the hub and linker tables
+that are used and some of the ID fields used for joining.
+For example, this is what a query for a Gene Group would look like after
+switching to using the <code>grp</code> as the hub table and <code>grp_synonym</code> as the linker table.</p>
+<pre><code class="hljs css language-sql"><span class="hljs-keyword">select</span> <span class="hljs-keyword">distinct</span> gg.uniquename, s.synonym_sgml
+  <span class="hljs-keyword">from</span> grp gg <span class="hljs-keyword">join</span> grp_synonym gs <span class="hljs-keyword">on</span> (gg.grp_id=gs.grp_id)
+                 <span class="hljs-keyword">join</span> <span class="hljs-keyword">synonym</span> s <span class="hljs-keyword">on</span> (gs.synonym_id=s.synonym_id)
+                 <span class="hljs-keyword">join</span> cvterm cvt <span class="hljs-keyword">on</span> (s.type_id=cvt.cvterm_id)
+  <span class="hljs-keyword">where</span> gg.uniquename=<span class="hljs-string">'FBgg0000546'</span>
+    <span class="hljs-keyword">and</span> cvt.name=<span class="hljs-string">'symbol'</span>
+    <span class="hljs-keyword">and</span> gs.is_current=<span class="hljs-literal">true</span>
+;
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="chado-function"></a><a href="#chado-function" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Chado Function</h2>
+<p>Since this is a commonly used query when working with FlyBase data we have added some custom FlyBase
+functions to make this a bit easier.</p>
+<ul>
+<li><a href="/docs/chado/functions#symbols-and-names">FlyBase Symbol Functions for Chado</a></li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/howtos-list"><span class="arrow-prev">← </span><span>Full List</span></a><a class="docs-next button" href="/docs/api/index"><span>Overview</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#introduction">Introduction</a></li><li><a href="#requirements">Requirements</a></li><li><a href="#schema-structure">Schema Structure</a></li><li><a href="#synonym-table">Synonym Table</a><ul class="toc-headings"><li><a href="#name-vs-synonym_sgml"><code>name</code> vs <code>synonym_sgml</code></a></li></ul></li><li><a href="#gene-symbols">Gene Symbols</a><ul class="toc-headings"><li><a href="#gene-symbol-sql">Gene Symbol SQL</a></li></ul></li><li><a href="#other-symbols">Other Symbols</a></li><li><a href="#chado-function">Chado Function</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><div><h5>Docs</h5><a href="/docs/en/howtos.html">HowTo</a><a href="/docs/en/api/index.html">API</a><a href="/docs/en/chado/index.html">Chado</a><a href="/docs/en/downloads.html">Downloads</a></div><div><h5>Community</h5><a href="https://twitter.com/FlyBaseDotOrg">Twitter</a><a href="http://www.youtube.com/c/FlyBaseTV">YouTube</a><a href="https://groups.google.com/forum/#!forum/flybase">Google Groups</a><a href="https://flybase.org/contact/email">Email</a></div><div><h5>More</h5><a href="https://github.com/FlyBase">GitHub</a><a class="github-button" href="https://github.com/flybase/flybase.github.io" data-icon="octicon-star" data-count-href="/flybase/flybase.github.io/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2019 FlyBase and the Genetics Society of America</section></footer></div></body></html>

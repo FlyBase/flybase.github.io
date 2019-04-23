@@ -1,0 +1,181 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>FlyBase Chado Functions · FlyBase for Developers</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;h2&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;description&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#description&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Description&lt;/h2&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="FlyBase Chado Functions · FlyBase for Developers"/><meta property="og:type" content="website"/><meta property="og:url" content="https://flybase.github.io/"/><meta property="og:description" content="&lt;h2&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;description&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#description&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Description&lt;/h2&gt;
+"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css"/><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/><link rel="stylesheet" href="/css/code-block-buttons.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/js/code-block-buttons.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/fly_logo.png" alt="FlyBase for Developers"/><h2 class="headerTitleWithLogo">FlyBase for Developers</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/howtos-list" target="_self">HowTo</a></li><li class="siteNavGroupActive"><a href="/docs/api/" target="_self">API</a></li><li class="siteNavGroupActive"><a href="/docs/chado/" target="_self">Chado</a></li><li class="siteNavGroupActive"><a href="/docs/downloads" target="_self">Downloads</a></li><li class=""><a href="http://github.com/flybase" target="_self">GitHub</a></li><li class=""><a href="http://flybase.org/contact/email" target="_self">Help</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Chado</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">HowTos</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/howtos-list">Full List</a></li><li class="navListItem"><a class="navItem" href="/docs/howtos/chado/symbol-lookup">Symbol Lookup</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/api/">Overview</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Chado</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/chado/">General Information</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Functions</h4><ul><li class="navListItem navListItemActive"><a class="navItem" href="/docs/chado/functions">FlyBase Specific</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Downloads</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/downloads">Overview</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">FlyBase Chado Functions</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="description"></a><a href="#description" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Description</h2>
+<p>This page describes custom database functions that FlyBase has added to Chado to simplify
+working with FlyBase data.  For general Chado functions please
+refer to the <a href="http://gmod.org/wiki/Chado_Manual#DBMS_Functions">GMOD Chado documentation</a>.</p>
+<h2><a class="anchor" aria-hidden="true" id="id-utilities"></a><a href="#id-utilities" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ID Utilities</h2>
+<h3><a class="anchor" aria-hidden="true" id="data_class"></a><a href="#data_class" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>data_class</h3>
+<p><code>flybase.data_class(FlyBase_ID)</code></p>
+<p>Takes a FlyBase ID and returns the 4 letter FlyBase data class.</p>
+<p>e.g. FBgn0000490 -&gt; FBgn</p>
+<pre><code class="hljs css language-sql"><span class="hljs-keyword">select</span> flybase.data_class(<span class="hljs-string">'FBgn0000490'</span>);
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="update_ids"></a><a href="#update_ids" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>update_ids</h3>
+<p><code>flybase.update_ids(FlyBase_ID)</code></p>
+<p>Takes a single ID or an array of FlyBase Gene IDs (FBgn) and validates them against the current
+database.  A 3 column result set is returned containing the submitted ID, the updated ID, and
+a conversion status.</p>
+<h4><a class="anchor" aria-hidden="true" id="conversion-status"></a><a href="#conversion-status" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Conversion status</h4>
+<table>
+<thead>
+<tr><th>Status</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>current</td><td>Submitted ID is current, there are no changes.</td></tr>
+<tr><td>updated</td><td>The submitted ID is not current but the ID was cleanly updated to the current ID.</td></tr>
+<tr><td>split</td><td>The submitted ID is not current and there are multiple possible new IDs.</td></tr>
+</tbody>
+</table>
+<p>An ID that is involved in a split will have two or more entries in the result.  One for
+each of the possible new gene IDs.</p>
+<h4><a class="anchor" aria-hidden="true" id="parameters"></a><a href="#parameters" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parameters</h4>
+<table>
+<thead>
+<tr><th>Name</th><th>Description</th><th>Required</th><th>Default</th></tr>
+</thead>
+<tbody>
+<tr><td>FlyBase_ID</td><td>One ID or an array of IDs</td><td>Y</td><td>N/A</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="returns"></a><a href="#returns" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Returns</h4>
+<table>
+<thead>
+<tr><th>Name</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>Submitted ID</td><td>The ID originally submitted.</td></tr>
+<tr><td>Updated ID</td><td>The updated ID</td></tr>
+<tr><td>Status</td><td>The conversion status (current, updated, split)</td></tr>
+</tbody>
+</table>
+<pre><code class="hljs css language-sql"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> flybase.update_ids(<span class="hljs-string">'FBgn0000490'</span>);
+<span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> flybase.update_ids(<span class="hljs-built_in">ARRAY</span>[<span class="hljs-string">'FBgn0000490'</span>,<span class="hljs-string">'FBgn0002675'</span>,<span class="hljs-string">'FBgn0030866'</span>,<span class="hljs-string">'FBgn0031810'</span>]);
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="symbols-and-names"></a><a href="#symbols-and-names" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Symbols and Names</h2>
+<h3><a class="anchor" aria-hidden="true" id="current_symbol"></a><a href="#current_symbol" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>current_symbol</h3>
+<p><code>flybase.current_symbol(FlyBase_ID)</code></p>
+<p>Takes a current FlyBase ID and returns the current symbol.
+Any current FlyBase data class ID can be passed in regardless of the hub table
+that is used for that data class.</p>
+<pre><code class="hljs css language-sql"><span class="hljs-keyword">select</span> flybase.current_symbol(<span class="hljs-string">'FBgn0000490'</span>);
+</code></pre>
+<pre><code class="hljs css language-sql"><span class="hljs-keyword">select</span> flybase.current_symbol(<span class="hljs-string">'FBgg0000546'</span>);
+</code></pre>
+<pre><code class="hljs css language-sql"><span class="hljs-keyword">select</span> f.uniquename, flybase.current_symbol(f.uniquename)
+  <span class="hljs-keyword">from</span> feature f
+  <span class="hljs-keyword">where</span> f.uniquename ~ <span class="hljs-string">'^FBgn[0-9]+$'</span>
+    <span class="hljs-keyword">and</span> f.is_obsolete=<span class="hljs-literal">false</span>
+<span class="hljs-keyword">limit</span> <span class="hljs-number">5</span>;
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="current_fullname"></a><a href="#current_fullname" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>current_fullname</h3>
+<p><code>flybase.current_fullname(FlyBase_ID)</code></p>
+<p>Takes a current FlyBase ID and returns the current full name.
+Any current FlyBase data class ID can be passed in regardless of the hub table
+that is used for that data class.</p>
+<pre><code class="hljs css language-sql"><span class="hljs-keyword">select</span> flybase.current_fullname(<span class="hljs-string">'FBgn0000490'</span>);
+</code></pre>
+<pre><code class="hljs css language-sql"><span class="hljs-keyword">select</span> flybase.current_fullname(<span class="hljs-string">'FBgg0000546'</span>);
+</code></pre>
+<pre><code class="hljs css language-sql"><span class="hljs-keyword">select</span> f.uniquename, flybase.current_fullname(f.uniquename)
+  <span class="hljs-keyword">from</span> feature f
+  <span class="hljs-keyword">where</span> f.uniquename ~ <span class="hljs-string">'^FBgn[0-9]+$'</span>
+    <span class="hljs-keyword">and</span> f.is_obsolete=<span class="hljs-literal">false</span>
+<span class="hljs-keyword">limit</span> <span class="hljs-number">5</span>;
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="current_synonym"></a><a href="#current_synonym" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>current_synonym</h3>
+<p><code>flybase.current_synonym(FlyBase_ID, synonym_type)</code></p>
+<p>Takes a current FlyBase ID and a synonym type and returns the current synonym.synonym_sgml
+value.</p>
+<pre><code class="hljs css language-sql"><span class="hljs-keyword">select</span> flybase.current_synonym(<span class="hljs-string">'FBgn0000490'</span>,<span class="hljs-string">'symbol'</span>),
+       flybase.current_synonym(<span class="hljs-string">'FBgn0000490'</span>,<span class="hljs-string">'fullname'</span>);
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="relationships"></a><a href="#relationships" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Relationships</h2>
+<p>These functions are for querying object relationships using tables such as <code>feature_relationship</code>.</p>
+<h3><a class="anchor" aria-hidden="true" id="get_feature_relationship"></a><a href="#get_feature_relationship" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>get_feature_relationship</h3>
+<p><code>flybase.get_feature_relationship(FlyBase_ID(s), relationship_type, data_class, relationship_direction)</code></p>
+<p>Takes one or more FlyBase IDs, relationship type(s), data class(es) (optional), and relationship direction (optional)
+and returns the related entities.</p>
+<p>This can be used to fetch all transcripts of a gene, all alleles of a gene, orthologs, etc.</p>
+<h4><a class="anchor" aria-hidden="true" id="parameters-1"></a><a href="#parameters-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parameters</h4>
+<table>
+<thead>
+<tr><th>Name</th><th>Description</th><th>Required</th><th>Default</th></tr>
+</thead>
+<tbody>
+<tr><td>FlyBase_ID</td><td>One ID or an array of IDs to find other related entities for.</td><td>Y</td><td>N/A</td></tr>
+<tr><td>relationship_type</td><td>One or more <code>cvterm.name</code> values used to type the relationship via <code>feature_relationship.type_id</code>.</td><td>Y</td><td>N/A</td></tr>
+<tr><td>data_class</td><td>One or more FlyBase data classes to limit the results to.</td><td>N</td><td>all data classes</td></tr>
+<tr><td>relationship_direction</td><td>The direction you wish to fetch objects for ('object' or 'subject').</td><td>N</td><td>subject</td></tr>
+</tbody>
+</table>
+<p>Multiple values in the relationship_type and data_class parameters need to be delimited with a pipe '|'
+character.</p>
+<p>e.g. 'associated_with|partof'  or 'FBal|FBtp|FBti'</p>
+<h4><a class="anchor" aria-hidden="true" id="returns-1"></a><a href="#returns-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Returns</h4>
+<p>A composite table of all the feature_relationship columns plus the uniquename and symbol of the related entities.</p>
+<pre><code class="hljs css language-sql"><span class="hljs-comment">-- Single IDs</span>
+<span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> flybase.get_feature_relationship(<span class="hljs-string">'FBgn0000490'</span>, <span class="hljs-string">'associated_with|partof'</span>, <span class="hljs-string">'FBti|FBtr'</span>);
+<span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> flybase.get_feature_relationship(<span class="hljs-string">'FBgn0000490'</span>, <span class="hljs-string">'alleleof'</span>, <span class="hljs-string">'FBal'</span>);
+<span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> flybase.get_feature_relationship(<span class="hljs-string">'FBgn0000490'</span>, <span class="hljs-string">'alleleof'</span>, <span class="hljs-string">'FBal'</span>, <span class="hljs-string">'subject'</span>);
+<span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> flybase.get_feature_relationship(<span class="hljs-string">'FBgn0000490'</span>, <span class="hljs-string">'orthologous_to'</span>, <span class="hljs-string">'FBgn|FBog'</span>);
+
+<span class="hljs-comment">-- Multiple IDs</span>
+<span class="hljs-keyword">select</span> *
+   <span class="hljs-keyword">from</span> flybase.get_feature_relationship(<span class="hljs-built_in">ARRAY</span>[<span class="hljs-string">'FBgn0000490'</span>,<span class="hljs-string">'FBgn0013765'</span>], <span class="hljs-string">'alleleof'</span>, <span class="hljs-literal">NULL</span>,<span class="hljs-string">'subject'</span>)
+;
+<span class="hljs-keyword">select</span> *
+   <span class="hljs-keyword">from</span> flybase.get_feature_relationship((<span class="hljs-keyword">select</span> array_agg(f.uniquename) <span class="hljs-keyword">from</span> feature f <span class="hljs-keyword">where</span> uniquename <span class="hljs-keyword">in</span> (<span class="hljs-string">'FBgn0000490'</span>,<span class="hljs-string">'FBgn0013765'</span>)), <span class="hljs-string">'alleleof'</span>, <span class="hljs-literal">NULL</span>,<span class="hljs-string">'subject'</span>)
+;
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/chado/index"><span class="arrow-prev">← </span><span>General Information</span></a><a class="docs-next button" href="/docs/downloads"><span>Overview</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#description">Description</a></li><li><a href="#id-utilities">ID Utilities</a><ul class="toc-headings"><li><a href="#data_class">data_class</a></li><li><a href="#update_ids">update_ids</a></li></ul></li><li><a href="#symbols-and-names">Symbols and Names</a><ul class="toc-headings"><li><a href="#current_symbol">current_symbol</a></li><li><a href="#current_fullname">current_fullname</a></li><li><a href="#current_synonym">current_synonym</a></li></ul></li><li><a href="#relationships">Relationships</a><ul class="toc-headings"><li><a href="#get_feature_relationship">get_feature_relationship</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><div><h5>Docs</h5><a href="/docs/en/howtos.html">HowTo</a><a href="/docs/en/api/index.html">API</a><a href="/docs/en/chado/index.html">Chado</a><a href="/docs/en/downloads.html">Downloads</a></div><div><h5>Community</h5><a href="https://twitter.com/FlyBaseDotOrg">Twitter</a><a href="http://www.youtube.com/c/FlyBaseTV">YouTube</a><a href="https://groups.google.com/forum/#!forum/flybase">Google Groups</a><a href="https://flybase.org/contact/email">Email</a></div><div><h5>More</h5><a href="https://github.com/FlyBase">GitHub</a><a class="github-button" href="https://github.com/flybase/flybase.github.io" data-icon="octicon-star" data-count-href="/flybase/flybase.github.io/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2019 FlyBase and the Genetics Society of America</section></footer></div></body></html>
