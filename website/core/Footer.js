@@ -27,7 +27,7 @@ class Footer extends React.Component {
         <section className="sitemap">
           <div>
             <h5>Docs</h5>
-            <a href={this.docUrl('howtos.html', this.props.language)}>
+            <a href={this.docUrl('howtos-list.html', this.props.language)}>
               HowTo
             </a>
             <a href={this.docUrl('api/index.html', this.props.language)}>
