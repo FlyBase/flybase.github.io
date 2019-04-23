@@ -5,11 +5,25 @@
     "previous": "Previous",
     "tagline": "Developer docs for FlyBase API, Chado, bulk files, etc.",
     "docs": {
-      "chado-general": {
-        "title": "General Chado Information"
+      "api/index": {
+        "title": "API Overview",
+        "sidebar_label": "Overview"
+      },
+      "chado/functions": {
+        "title": "FlyBase Chado Functions",
+        "sidebar_label": "FlyBase Specific"
+      },
+      "chado/index": {
+        "title": "Chado General Information",
+        "sidebar_label": "General Information"
       },
       "downloads": {
-        "title": "FlyBase Downloads"
+        "title": "Downloads Overview",
+        "sidebar_label": "Overview"
+      },
+      "howtos/chado/symbol-lookup": {
+        "title": "Symbol Lookup with Chado",
+        "sidebar_label": "Symbol Lookup"
       }
     },
     "links": {
@@ -20,7 +34,9 @@
       "Help": "Help"
     },
     "categories": {
-      "Chado": "Chado"
+      "API": "API",
+      "Chado": "Chado",
+      "Downloads": "Downloads"
     }
   },
   "pages-strings": {

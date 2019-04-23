@@ -38,8 +38,8 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {href: 'https://app.swaggerhub.com/apis-docs/FlyBase/FlyBase/', label: 'API'},
-    {doc: 'chado-general', label: 'Chado'},
+    {doc: 'api/index', label: 'API'},
+    {doc: 'chado/index', label: 'Chado'},
     {doc: 'downloads', label: 'Downloads'},
     {href: 'http://github.com/flybase', label: 'GitHub'},
     {href: 'http://flybase.org/contact/email', label: 'Help'},
@@ -61,7 +61,7 @@ const siteConfig = {
   },
   stylesheets: [
     'https://use.fontawesome.com/releases/v5.8.1/css/all.css',
-    /*'https://unpkg.com/swagger-ui-react@3.22.1/swagger-ui.css',*/
+    '/css/code-block-buttons.css',
   ],
 
   /* Custom fonts for website */
@@ -83,11 +83,15 @@ const siteConfig = {
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
-    theme: 'default',
+    theme: 'darcula',
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js'],
+  scripts: [
+    'https://buttons.github.io/buttons.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
+    '/js/code-block-buttons.js',
+  ],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',

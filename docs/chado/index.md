@@ -1,23 +1,22 @@
 ---
-id: chado-general
-title: General Chado Information
+id: index
+title: Chado General Information
+sidebar_label: General Information
 ---
 
-## FlyBase Chado
-
-### Background
+## Background
 
 [Chado](http://gmod.org/wiki/Chado) is a relational database schema for managing
-a wide variety of biological data. It is was started by [FlyBase](http://flybase.org)
-and is currently maintained by the [GMOD](http://gmod.org) organization.
+biological data that was created by [FlyBase](http://flybase.org) in 2006.
+It is currently developed and maintained by the [GMOD](http://gmod.org) organization.
 
-### Database Dumps
+## Database Dumps
 
 PostgreSQL database dumps of the FlyBase Chado database are available for every release of FlyBase from our FTP site.
 
 * [ftp://ftp.flybase.org/releases/current/psql/](ftp://ftp.flybase.org/releases/current/psql/)
 
-#### Steps to load
+### Steps to load
 
 This procedure assumes that you have enough disk space to hold the downloaded dump files and
 the PostgreSQL database files.  You should expect to use ~200 GB of disk space for this procedure.
@@ -35,26 +34,23 @@ cat FB2018_03.sql.gz.00 FB2018_03.sql.gz.01 FB2018_03.sql.gz.02 FB2018_03.sql.gz
 vacuumdb -f -z -v my_flybase
 ```
 
-### Public Database
+## Public Database
 
 If you only need occasional access to the FlyBase Chado database and performance is not a primary concern
 you can access our public Chado instance via any SQL client that supports PostgreSQL.
 
  **hostname:** chado.flybase.org
- 
+
  **user:** flybase
- 
+
  **password:** &lt;none&gt;
- 
+
  **database:** flybase
- 
+
  **port:** 5432
- 
+
 Example using the command line PostgreSQL client `psql`:
+
 ```bash
 psql -h chado.flybase.org flybase flybase
-psql (10.4 (Ubuntu 10.4-0ubuntu0.18.04), server 9.5.12)
-Type "help" for help.
-
-flybase=> 
 ```

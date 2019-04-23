@@ -63,8 +63,8 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href={swagger_url}>API</Button>
-            <Button href={docUrl('chado-general.html')}>Chado</Button>
+            <Button href={docUrl('api/index')}>API</Button>
+            <Button href={docUrl('chado/index')}>Chado</Button>
             <Button href={docUrl('downloads.html')}>Downloads</Button>
           </PromoSection>
         </div>
@@ -89,10 +89,10 @@ class Index extends React.Component {
         className="front-page"
         background="light">
         <section>
-          <a href={swagger_url}><i className="fas fa-cogs fa-7x" /></a>
+          <a href={docUrl('api/index')}><i className="fas fa-cogs fa-7x" /></a>
           <div>
-            <h2><a href={swagger_url}>API</a></h2>
-            <p>Swagger docs for FlyBase API endpoints.</p>
+            <h2><a href={docUrl('api/index')}>API</a></h2>
+            <p>Full details on all our available programmatic endpoints.</p>
           </div>
         </section>
       </Container>
@@ -104,9 +104,9 @@ class Index extends React.Component {
         id="chado"
         className="front-page">
         <section>
-          <a href={docUrl('chado-general.html')}><i className="fas fa-mug-hot fa-7x" /></a>
+          <a href={docUrl('chado/index')}><i className="fas fa-mug-hot fa-7x" /></a>
           <div>
-            <h2><a href={docUrl('chado-general.html')}>Chado</a></h2>
+            <h2><a href={docUrl('chado/index')}>Chado</a></h2>
             <p>
               Chado is the relational database schema used by FlyBase and other organism databases
               to manage our curated Drosophila data.  Click here to learn about the FlyBase Chado database.

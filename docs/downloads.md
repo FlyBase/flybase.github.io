@@ -1,11 +1,12 @@
 ---
 id: downloads
-title: FlyBase Downloads
+title: Downloads Overview
+sidebar_label: Overview
 ---
 
-
 ## Documentation
-* [Downloads Overview](https://wiki.flybase.org/wiki/FlyBase:Downloads_Overview)
+
+* [Downloads Overview @FlyBase.org](https://wiki.flybase.org/wiki/FlyBase:Downloads_Overview)
 
 ## FTP site
 
@@ -14,4 +15,3 @@ Passive mode is required for downloading files.
 
 * [Releases FTP](ftp://ftp.flybase.org/releases/)
 * [Genome FTP](ftp://ftp.flybase.org/genomes/)
-
