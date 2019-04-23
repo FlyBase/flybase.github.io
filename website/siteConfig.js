@@ -38,6 +38,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
+    {doc: 'howtos-list', label: 'HowTo'},
     {doc: 'api/index', label: 'API'},
     {doc: 'chado/index', label: 'Chado'},
     {doc: 'downloads', label: 'Downloads'},

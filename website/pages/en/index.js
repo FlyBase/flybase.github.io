@@ -63,6 +63,7 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
+            <Button href={docUrl('howtos-list')}>HowTo</Button>
             <Button href={docUrl('api/index')}>API</Button>
             <Button href={docUrl('chado/index')}>Chado</Button>
             <Button href={docUrl('downloads.html')}>Downloads</Button>
@@ -82,12 +83,26 @@ class Index extends React.Component {
     const langPart = `${language ? `${language}/` : ''}`;
     const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
 
+    const Howto = () => (
+      <Container
+        padding={['all']}
+        id="howto"
+        className="front-page"
+        background="light">
+        <section>
+          <a href={docUrl('howtos-list')}><i className="fas fa-book fa-7x" /></a>
+          <div>
+            <h2><a href={docUrl('howtos-list')}>HowTo</a></h2>
+            <p>HowTo tutorials for working with FlyBase data.</p>
+          </div>
+        </section>
+      </Container>
+    );
     const Api = () => (
       <Container
         padding={['all']}
         id="api"
-        className="front-page"
-        background="light">
+        className="front-page">
         <section>
           <a href={docUrl('api/index')}><i className="fas fa-cogs fa-7x" /></a>
           <div>
@@ -102,7 +117,8 @@ class Index extends React.Component {
       <Container
         padding={['all']}
         id="chado"
-        className="front-page">
+        className="front-page"
+        background="light">
         <section>
           <a href={docUrl('chado/index')}><i className="fas fa-mug-hot fa-7x" /></a>
           <div>
@@ -121,8 +137,7 @@ class Index extends React.Component {
       <Container
         padding={['all']}
         id="downloads"
-        className="front-page"
-        background="light">
+        className="front-page">
         <section>
           <a href={docUrl('downloads.html')}><i className="fas fa-download fa-7x" /></a>
           <div>
@@ -137,6 +152,7 @@ class Index extends React.Component {
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
+          <Howto />
           <Api />
           <Chado />
           <Downloads />

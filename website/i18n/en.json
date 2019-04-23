@@ -21,12 +21,17 @@
         "title": "Downloads Overview",
         "sidebar_label": "Overview"
       },
+      "howtos-list": {
+        "title": "FlyBase HowTos",
+        "sidebar_label": "Full List"
+      },
       "howtos/chado/symbol-lookup": {
         "title": "Symbol Lookup with Chado",
         "sidebar_label": "Symbol Lookup"
       }
     },
     "links": {
+      "HowTo": "HowTo",
       "API": "API",
       "Chado": "Chado",
       "Downloads": "Downloads",
@@ -34,6 +39,7 @@
       "Help": "Help"
     },
     "categories": {
+      "HowTos": "HowTos",
       "API": "API",
       "Chado": "Chado",
       "Downloads": "Downloads"

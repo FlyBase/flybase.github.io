@@ -27,10 +27,13 @@ class Footer extends React.Component {
         <section className="sitemap">
           <div>
             <h5>Docs</h5>
-            <a href={'https://app.swaggerhub.com/apis-docs/FlyBase/FlyBase/'}>
+            <a href={this.docUrl('howtos.html', this.props.language)}>
+              HowTo
+            </a>
+            <a href={this.docUrl('api/index.html', this.props.language)}>
               API
             </a>
-            <a href={this.docUrl('chado-general.html', this.props.language)}>
+            <a href={this.docUrl('chado/index.html', this.props.language)}>
               Chado
             </a>
             <a href={this.docUrl('downloads.html', this.props.language)}>

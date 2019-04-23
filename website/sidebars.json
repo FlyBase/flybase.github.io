@@ -1,15 +1,12 @@
 {
   "docs": {
+    "HowTos": [
+      "howtos-list",
+      "howtos/chado/symbol-lookup"
+    ],
     "API": ["api/index"],
     "Chado": [
       "chado/index",
-      {
-        "type": "subcategory",
-        "label": "HowTos",
-        "ids": [
-          "howtos/chado/symbol-lookup"
-        ]
-      },
       {
         "type": "subcategory",
         "label": "Functions",

@@ -12,6 +12,5 @@
     "docusaurus": "^2.0.0-alpha.6"
   },
   "dependencies": {
-    "swagger-ui-react": "^3.22.1"
   }
 }

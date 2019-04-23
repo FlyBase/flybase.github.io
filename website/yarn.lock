@@ -1945,10 +1945,10 @@ dir-glob@2.0.0:
     arrify "^1.0.1"
     path-type "^3.0.0"
 
-docusaurus@^2.0.0-alpha.5:
-  version "2.0.0-alpha.5"
-  resolved "https://registry.yarnpkg.com/docusaurus/-/docusaurus-2.0.0-alpha.5.tgz#7d83953716b229952ec07188d728d2539644bead"
-  integrity sha512-+pQgsicFYWbiEbz7zYdFgawU91oxKOyE3vBbSr+5w6Bpn3KrXdpcP1Q+P3MqgfYNVIwVu3n7eFOC5TAX2Jtf3w==
+docusaurus@^2.0.0-alpha.6:
+  version "2.0.0-alpha.6"
+  resolved "https://registry.yarnpkg.com/docusaurus/-/docusaurus-2.0.0-alpha.6.tgz#3ea061ec8a6425cdb11ba6d839bb05a3d0aacbba"
+  integrity sha512-NjFsNyKDjPTu884sSIpGn3sHcfo85gsBtB9+Pm3HPuaj/gFu2EaNikIb9jvk4/EXyoZ4xnrU6Rtup4vdAxxfHQ==
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/plugin-proposal-class-properties" "^7.0.0"
