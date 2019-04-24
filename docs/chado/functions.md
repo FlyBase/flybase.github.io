@@ -10,6 +10,10 @@ This page describes custom database functions that FlyBase has added to Chado to
 working with FlyBase data.  For general Chado functions please
 refer to the [GMOD Chado documentation](http://gmod.org/wiki/Chado_Manual#DBMS_Functions).
 
+## Source Code
+
+* [chado/schema](https://github.com/FlyBase/chado/tree/master/schema) (GitHub)
+
 ## ID Utilities
 
 ### data_class

@@ -49,6 +49,7 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>More</h5>
+            <a href="https://flybase.org/">FlyBase.org</a>
             <a href="https://github.com/FlyBase">GitHub</a>
             <a
               className="github-button"
