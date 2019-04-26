@@ -78,6 +78,11 @@ const siteConfig = {
     ]
   },
   */
+  algolia: {
+    apiKey: '29d4f2ef4647c6d2b1c614b92bc142fe',
+    indexName: 'flybase',
+    algoliaOptions: {} // Optional, if provided by Algolia
+  },
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} FlyBase and the Genetics Society of America`,

@@ -34,9 +34,9 @@ select flybase.data_class('FBgn0000490');
 
 Takes a single ID or an array of FlyBase Gene IDs (FBgn) and validates them against the current
 database.  A 3 column result set is returned containing the submitted ID, the updated ID, and
-a conversion status.
+an update status.
 
-#### Conversion status
+#### Update status
 Status | Description
 ------ | -----------
 current | Submitted ID is current, there are no changes.
@@ -56,9 +56,9 @@ FlyBase_ID | One ID or an array of IDs | Y | N/A
 
 Name | Description
 ------------ | -------------
-Submitted ID | The ID originally submitted.
-Updated ID | The updated ID
-Status | The conversion status (current, updated, split)
+submitted_id | The ID originally submitted.
+updated_id | The updated ID
+status | Update status (current, updated, split)
 
 ```sql
 select * from flybase.update_ids('FBgn0000490');
@@ -155,7 +155,16 @@ e.g. 'associated_with|partof'  or 'FBal|FBtp|FBti'
 
 #### Returns
 
-A composite table of all the feature_relationship columns plus the uniquename and symbol of the related entities.
+Name | Description
+------------ | -------------
+feature_relationship_id | Same as `feature_relationship` table
+object_id | Same as `feature_relationship` table
+subject_id | Same as `feature_relationship` table
+uniquename | `feature.uniquename` of the related entity.
+symbol | Current symbol of the related entity.
+rank | Same as `feature_relationship` table.
+value | Same as `feature_relationship` table.
+type | The corresponding `cvterm.name` value for the `feature_relationship.type_id` field.
 
 ```sql
 -- Single IDs
@@ -165,11 +174,24 @@ select * from flybase.get_feature_relationship('FBgn0000490', 'alleleof', 'FBal'
 select * from flybase.get_feature_relationship('FBgn0000490', 'orthologous_to', 'FBgn|FBog');
 
 -- Multiple IDs
+-- Using an array literal
 select *
-   from flybase.get_feature_relationship(ARRAY['FBgn0000490','FBgn0013765'], 'alleleof', NULL,'subject')
+   from flybase.get_feature_relationship(
+     array['FBgn0000490','FBgn0013765'],
+     'alleleof',
+     NULL,
+     'subject')
 ;
+-- From a query result.
 select *
-   from flybase.get_feature_relationship((select array_agg(f.uniquename) from feature f where uniquename in ('FBgn0000490','FBgn0013765')), 'alleleof', NULL,'subject')
+   from flybase.get_feature_relationship(
+     array(
+       select f.uniquename
+         from feature f
+         where uniquename in ('FBgn0000490','FBgn0013765')
+     ),
+     'alleleof',
+     NULL,
+     'subject')
 ;
 ```
-
