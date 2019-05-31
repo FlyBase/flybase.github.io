@@ -1,7 +1,7 @@
 ---
 id: howtos-list
 title: FlyBase HowTos
-sidebar_label: Full List
+sidebar_label: Index
 ---
 
 ## Description

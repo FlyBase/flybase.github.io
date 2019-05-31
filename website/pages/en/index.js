@@ -148,10 +148,20 @@ class Index extends React.Component {
       </Container>
     );
 
+    const About = () => (
+        <section>
+          <p style={{fontSize: '1.75rem', textAlign: 'center'}}>
+            <a href="https://flybase.org/">FlyBase</a> is a database of <em>Drosophila</em> genes & genomes.
+          </p>
+        </section>
+    );
+
+
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
+          <About />
           <Howto />
           <Api />
           <Chado />
