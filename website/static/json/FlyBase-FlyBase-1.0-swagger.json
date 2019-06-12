@@ -2,7 +2,7 @@
   "openapi" : "3.0.0",
   "servers" : [ {
     "description" : "FlyBase API",
-    "url" : "http://api.flybase.org/api/v1.0/"
+    "url" : "https://api.flybase.org/api/v1.0/"
   } ],
   "info" : {
     "description" : "API access to various FlyBase.org data sets",
